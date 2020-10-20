@@ -1,0 +1,53 @@
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+/* make stick to the left side with a right-sided border */
+#navbar {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  border-right: 1px solid black;
+  padding-right: 10px;
+  position: fixed;
+}
+
+#main-doc {
+  margin-left: 300px;
+}
+
+@media only screen and (max-width: 800px) {
+  #navbar {
+    flex-direction: row;
+    border-left: none;
+    border-bottom: 1px solid black;
+    height: 80px;
+    background-color: white;
+  }
+  #main-doc {
+    margin-left: inherit;
+    padding-top: 100px;
+  }
+}
+
+/* some space between sections */
+.main-section {
+  margin-bottom: 60px;
+}
+
+
+
+/* enable line breaks in <code> tag (better use <pre> tag?) */
+code {
+  display: block;
+  white-space: pre-wrap;
+}
+
+nav header {
+  font-size: 26px;
+}
+header {
+  font-size: 20px;
+  font-weight: bold;
+}
